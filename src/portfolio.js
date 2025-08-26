@@ -7,6 +7,7 @@ import reactCertificate from "./assets/images/certificado_fundamentos_de_react.p
 import reactCertificate2 from "./assets/images/certificado_react__ampliando_conceptos.pdf";
 import bigDataCertificate from "./assets/images/certificado-bigdata-empresas.jpeg";
 import buzonImage from "./assets/images/buzon.avif";
+import ubLogo from "./assets/images/ub-logo.jpg";
 // Splash Screen
 
 const splashScreen = {
@@ -153,7 +154,7 @@ const educationInfo = {
     },
     {
       schoolName: "Universitat de Barcelona",
-      logo: require("./assets/images/ub-logo.jpg"),
+      logo: ubLogo,
       subHeader: "Bachelor of Sociology",
       duration: "September 2019 - June 2023",
       desc: "Understanding human societies and their evolution and organization to capture collective, structural and individual dynamics that explain social, political, cultural and economic reality.",
