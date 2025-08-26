@@ -153,7 +153,7 @@ const educationInfo = {
     },
     {
       schoolName: "Universitat de Barcelona",
-      logo: require("./assets/images/logoUB.jpg"),
+      logo: require("./assets/images/ub-logo.jpg"),
       subHeader: "Bachelor of Sociology",
       duration: "September 2019 - June 2023",
       desc: "Understanding human societies and their evolution and organization to capture collective, structural and individual dynamics that explain social, political, cultural and economic reality.",
