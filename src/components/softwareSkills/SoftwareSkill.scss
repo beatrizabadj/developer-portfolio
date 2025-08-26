@@ -19,13 +19,25 @@
   color: $subTitle;
 }
 
+.software-skill-inline > svg,
+.software-skill-inline > svg path {
+  fill: $subTitle;
+}
+
+.software-skill-inline > svg:hover,
+.software-skill-inline > svg path:hover {
+  fill: $skillsColor;
+}
+
 .software-skill-inline > i:hover {
   color: $skillsColor;
 }
+
 .software-skill-inline > p {
   color: $subTitle;
   font-size: 10px;
 }
-.software-skill-inline > i:hover ~ p {
+.software-skill-inline > i:hover ~ p,
+.software-skill-inline > svg:hover ~ p {
   color: $skillsColor;
 }

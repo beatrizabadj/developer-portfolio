@@ -62,8 +62,32 @@ export default function StartupProject() {
                       className={
                         isDark ? "dark-mode card-subtitle" : "card-subtitle"
                       }
-                    >
-                      {project.projectDesc}
+                    > Date: <br></br>
+                      {project.projectDate}
+                    </p>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    > 
+                    Description:
+                    <br/>
+                      <ul>
+
+                        {project.projectDesc.map((desc, i) => {
+                            return (
+                              <li key={i}>{desc}</li>
+                        )} 
+                        )}
+                      
+                      </ul>
+                    </p>
+                    <p
+                      className={
+                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                      }
+                    > Built with: <br></br>
+                       {project.projectSoftware}
                     </p>
                     {project.footerLink ? (
                       <div className="project-card-footer">
