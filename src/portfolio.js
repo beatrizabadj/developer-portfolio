@@ -6,7 +6,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 import reactCertificate from "./assets/images/certificado_fundamentos_de_react.pdf";
 import reactCertificate2 from "./assets/images/certificado_react__ampliando_conceptos.pdf";
 import bigDataCertificate from "./assets/images/certificado-bigdata-empresas.jpeg";
-
+import buzonImage from "./assets/images/buzon.avif";
 // Splash Screen
 
 const splashScreen = {
@@ -419,10 +419,11 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: "Contact Me",
+  image: buzonImage,
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+34-609768774",
+  number: "",
   email_address: "beatrizabadjim@gmail.com"
 };
 
