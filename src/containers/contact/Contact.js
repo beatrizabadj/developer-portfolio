@@ -15,7 +15,7 @@ export default function Contact() {
         <div className="contact-div-main">
           <div className="contact-header">
             <h1 className="heading contact-title">{contactInfo.title}
-            <img src={contactInfo.image} className="heading contact-img"/>
+            {/* <img src={contactInfo.image} className="heading contact-img"/> */}
             </h1>
             <p
               className={
