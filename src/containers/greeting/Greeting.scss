@@ -36,7 +36,8 @@
 
 .button-greeting-div {
   display: flex;
-  margin-top: 40px;
+  margin-top: 0.5rem;
+  flex-wrap:wrap;
 }
 .download-link-button {
   text-decoration: none;

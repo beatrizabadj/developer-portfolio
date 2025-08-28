@@ -62,7 +62,7 @@ export default function StartupProject() {
                       className={
                         isDark ? "dark-mode card-subtitle" : "card-subtitle"
                       }
-                    > Date: <br></br>
+                    >
                       {project.projectDate}
                     </p>
                     <p

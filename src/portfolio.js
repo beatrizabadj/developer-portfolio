@@ -6,8 +6,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 import reactCertificate from "./assets/images/certificado_fundamentos_de_react.pdf";
 import reactCertificate2 from "./assets/images/certificado_react__ampliando_conceptos.pdf";
 import bigDataCertificate from "./assets/images/certificado-bigdata-empresas.jpeg";
-import buzonImage from "./assets/images/buzon.avif";
-// import ubLogo from "/images/ub-logo.jpg";
+
 // Splash Screen
 
 const splashScreen = {
@@ -237,18 +236,18 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projects",
+  title: emoji("Projects 💻"),
   subtitle: "",
   projects: [
     {
-      image: require("./assets/images/weathercast-logo.png"),
-      projectName: "Weather Forecast App",
+      image: require("./assets/images/weather.png"),
+      projectName: "Weather Forecast",
       projectDate: "May 2025",
       projectDesc: [
         "Check current weather and weather forecast for any city",
         "MVC architecture"
       ],
-      projectSoftware: "Csharp, .NET Core, SQLite, HTML, CSS, JavaScript",
+      projectSoftware: "Csharp, .NET Core, SQLite, HTML, CSS, JS",
       footerLink: [
         {
           name: "Visit Website",
@@ -257,11 +256,29 @@ const bigProjects = {
       ]
     },
     {
+      image: require("./assets/images/earth.png"),
+      projectName: "Earth Explorer",
+      projectDate: "Apr 2025",
+      projectDesc: [
+        "Travel around the world from home",
+        "Save your favorite spots and keep track!",
+        "Upload your pictures",
+        "Admins are somewhat special..."
+      ],
+      projectSoftware: "PHP, JS, MySQL, HTML, CSS, Three.js, GSAP, toastr.js, loading.io",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://earth-project-frontend.vercel.app/"
+        }
+      ]
+    },
+    {
       image: require("./assets/images/juegosdesombras-logo.png"),
-      projectName: "Juegos de Sombras website",
+      projectName: "SPA for Juegos de Sombras",
       projectDate: "Apr 2025",
       projectDesc: ["SPA for the escape room of Juegos de Sombras"],
-      projectSoftware: "HTML, CSS, Vanilla JS",
+      projectSoftware: "HTML, CSS, JS",
       footerLink: [
         {
           name: "Visit Website",
@@ -271,18 +288,50 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/descubre-espana-logo.png"),
+      image: require("./assets/images/discoverspain.png"),
       projectName: "Descubre España",
       projectDate: "Feb 2025",
       projectDesc: [
         "Search images from different Apis",
-        "Web apis integrated: Clipboard API, Web Share  APO and Fullscreen API."
+        "Web apis integrated: Clipboard, Web Share and Fullscreen."
       ],
-      projectSoftware: "Node.js, Express, Vanila JavaScript",
+      projectSoftware: "JS",
       footerLink: [
         {
           name: "Visit Website",
           url: "https://m6-proj-abad-beatriz.onrender.com/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/philo.png"),
+      projectName: "Philosophers' League",
+      projectDate: "Feb 2025",
+      projectDesc: [
+        "Dynamically creates philosopher cards, deletes, rearranges and saves in local storage",
+      ],
+      projectSoftware: "JS",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://beatrizabadj.github.io/M6-PROJ_Abad_Beatriz/MP06_UF1_PROJ-Abad_Beatriz/index.html"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/towers.png"),
+      projectName: "Tower Blocks",
+      projectDate: "Jan 2025",
+      projectDesc: [
+        "How many blocks can you stack before it collapses?",
+        "Keeps records of your best scores",
+        "Available for mobile too!",
+      ],
+      projectSoftware: "JS, HTML, CSS, SASS, Bootstrap, Howler.js, Apache Cordova, Android Studio",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://tower-blocks-project.vercel.app/"
         }
       ]
     },
@@ -294,7 +343,7 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements And Certifications 📜 "),
   subtitle:
     "",
 
