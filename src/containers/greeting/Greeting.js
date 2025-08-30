@@ -42,9 +42,9 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a style={{textDecoration: "none"}}
-                    href="./CV - Abad, Beatriz .pdf"
-                    download="CV - Abad, Beatriz .pdf"
-                    className="download-link-button"
+                    href="https://drive.google.com/file/d/1X8cHFwDnNgGEgpJfAHMoNvgrSR0dFd_S/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <Button text="See my resume" />
                   </a>
