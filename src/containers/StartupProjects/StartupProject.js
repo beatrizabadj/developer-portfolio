@@ -18,7 +18,7 @@ export default function StartupProject() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
+    // <Fade bottom duration={5000} distance="20px">
       <div className="main" id="projects">
         <div>
           <h1 className="skills-heading">{bigProjects.title}</h1>
@@ -33,10 +33,9 @@ export default function StartupProject() {
           </p>
 
           <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
-              return (
+            {bigProjects.projects.map((project, i) => (
+              <Fade key={i} bottom duration={1000} distance="20px">
                 <div
-                  key={i}
                   className={
                     isDark
                       ? "dark-mode project-card project-card-dark"
@@ -49,7 +48,7 @@ export default function StartupProject() {
                         src={project.image}
                         alt={project.projectName}
                         className="card-image"
-                      ></img>
+                      />
                     </div>
                   ) : null}
                   <div className="project-detail">
@@ -70,49 +69,43 @@ export default function StartupProject() {
                         isDark ? "dark-mode card-subtitle" : "card-subtitle"
                       }
                     > 
-                    Description:
-                    <br/>
+                      Description:
+                      <br/>
                       <ul>
-
-                        {project.projectDesc.map((desc, i) => {
-                            return (
-                              <li key={i}>{desc}</li>
-                        )} 
-                        )}
-                      
+                        {project.projectDesc.map((desc, j) => (
+                          <li key={j}>{desc}</li>
+                        ))}
                       </ul>
                     </p>
                     <p
                       className={
                         isDark ? "dark-mode card-subtitle" : "card-subtitle"
                       }
-                    > Built with: <br></br>
+                    > Built with: <br />
                        {project.projectSoftware}
                     </p>
                     {project.footerLink ? (
                       <div className="project-card-footer">
-                        {project.footerLink.map((link, i) => {
-                          return (
-                            <span
-                              key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
-                              onClick={() => openUrlInNewTab(link.url)}
-                            >
-                              {link.name}
-                            </span>
-                          );
-                        })}
+                        {project.footerLink.map((link, k) => (
+                          <span
+                            key={k}
+                            className={
+                              isDark ? "dark-mode project-tag" : "project-tag"
+                            }
+                            onClick={() => openUrlInNewTab(link.url)}
+                          >
+                            {link.name}
+                          </span>
+                        ))}
                       </div>
                     ) : null}
                   </div>
                 </div>
-              );
-            })}
+              </Fade>
+            ))}
+                
           </div>
         </div>
       </div>
-    </Fade>
   );
 }
