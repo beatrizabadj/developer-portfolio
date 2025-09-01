@@ -335,6 +335,22 @@ const bigProjects = {
         }
       ]
     },
+    {
+      image: require("./assets/images/retrobyte-logo.png"),
+      projectName: "Retro Byte",
+      projectDate: "Dec 2024",
+      projectDesc: [
+        "8-bit style website",
+        "Exploring figma, animations and interactions",
+      ],
+      projectSoftware: "JS, HTML, CSS",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://retrobyte-project.vercel.app/"
+        }
+      ]
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
